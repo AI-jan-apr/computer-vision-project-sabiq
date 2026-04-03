@@ -1,21 +1,26 @@
+-- ============================================================
+-- SABIQ Database Schema
+-- Road Damage Detection System
+-- Tuwaiq Academy — AI Track 2025
+-- ============================================================
+
+
+-- جدول الكشوفات
 CREATE TABLE detections (
     id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     created_at  TIMESTAMPTZ DEFAULT now(),
-    image_name  TEXT,
-    damage_type TEXT CHECK (damage_type IN ('crack','pothole','other')),
+    damage_type TEXT CHECK (damage_type IN ('crack', 'pothole', 'other')),
     confidence  FLOAT,
     severity    TEXT DEFAULT 'low',
     latitude    FLOAT,
     longitude   FLOAT,
-    bbox_x      FLOAT,
-    bbox_y      FLOAT,
-    bbox_w      FLOAT,
-    bbox_h      FLOAT,
-    status      TEXT DEFAULT 'pending',
-    reported_to TEXT DEFAULT 'أمانة الرياض',
-    notes       TEXT
+    google_maps_url TEXT GENERATED ALWAYS AS (
+        'https://www.google.com/maps?q=' || latitude::text || ',' || longitude::text
+    ) STORED
 );
 
+
+-- جدول التقارير
 CREATE TABLE reports (
     id           UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     created_at   TIMESTAMPTZ DEFAULT now(),
@@ -25,9 +30,10 @@ CREATE TABLE reports (
     notes        TEXT
 );
 
+
+-- الأمان
 ALTER TABLE detections ENABLE ROW LEVEL SECURITY;
-ALTER TABLE reports ENABLE ROW LEVEL SECURITY;
+ALTER TABLE reports    ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "allow all" ON detections FOR ALL USING (true) WITH CHECK (true);
-CREATE POLICY "allow all" ON reports FOR ALL USING (true) WITH CHECK (true);
-
+CREATE POLICY "allow all" ON reports    FOR ALL USING (true) WITH CHECK (true);
