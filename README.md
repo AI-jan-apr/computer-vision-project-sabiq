@@ -96,7 +96,7 @@ Cities struggle with slow, expensive, and incomplete inspections.
 | Recall | **0.605** | 0.547 | 0.558 | 0.585 
 ---
 
-### Per-Class Performance (V3 Final Model)
+### Per-Class Performance (V4 Final Model)
 
 | Class | Images | Precision | Recall | mAP50 | mAP50-95 |
 |-------|--------|-----------|--------|-------|----------|
