@@ -17,7 +17,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 | Name | Role | Contribution |
 |------|------|-------------|
 |Ahad Alotaibi|  |  |
-|  |  |  |
+|Rahaf ALshahrani  |  |  |
 |  ||  |
 
 ## Project Objectives
