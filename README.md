@@ -16,7 +16,7 @@ Every road tells a story… but not all damage is visible in time.
 A small crack today can become a dangerous pothole tomorrow.  
 Cities struggle with slow, expensive, and incomplete inspections.
 
-💡 **What if roads could monitor themselves?**
+  **What if roads could monitor themselves?**
 
 **SABIQ** AI-powered system that detects cracks and potholes from dashcam/drone video, deduplicates detections.
 
@@ -113,9 +113,9 @@ SABIQ/
 ├── NoteBooks/                          # Training & analysis notebooks
 │   ├── 01_EDA_Cleaning.ipynb           # Exploratory data analysis & data cleaning
 │   ├── 02_TrainY8_v1.ipynb             # V1: YOLOv8m baseline (5 classes)
-│   ├── 03_TrainY26_v2.ipynb            # V2: YOLO26m + oversampling
-│   ├── 04_TrainY26_v3.ipynb            # V3: YOLO26m + Albumentations (final)
-│   └── 05_TrainY11_v1.ipynb            # V4: YOLO11n lightweight baseline
+│   ├── 03_TrainY11_v2.ipynb            # V2: YOLO11n lightweight baseline
+│   ├── 04_TrainY26_v3.ipynb            # V3: YOLO26m + oversampling
+│   └── 05_TrainY26_v4.ipynb            # V4: YOLO26m + Albumentations (final)
 │
 ├── SABIQ_runs/                         # Training outputs
 │   ├── yolo26v1/                       # V2 weights, metrics, confusion matrix
