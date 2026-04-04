@@ -23,7 +23,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 
 ## Project Objectives
 
-**Problem:** Road surface defects such as potholes and cracks pose a serious risk to vehicle safety and traffic flow. When vehicles are damaged by poorly maintained roads, the responsible municipality is liable for compensation — creating both a safety concern and a financial burden. Traditional manual inspections are slow, costly, and cannot cover an entire city effectively.
+**Problem:** Road surface defects such as potholes and cracks pose a serious risk to vehicle safety and traffic flow. When vehicles are damaged by poorly maintained roads, the responsible municipality is liable for compensation creating both a safety concern and a financial burden. Traditional manual inspections are slow, costly, and cannot cover an entire city effectively.
 
 **Solution:** SABIQ automates road inspection using AI. Upload dashcam/drone video → detect defects → classify severity → store  → prioritize repairs.
 
@@ -46,7 +46,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 
 **1. Preprocessing:** Class merging (5→3), data cleaning, offline augmentation for potholes
 
-**2. Model:** YOLO26m (21.7M params, 74.7 GFLOPs) — latest YOLO with C3k2 blocks and C2PSA attention
+**2. Model:** YOLO26m (21.7M params, 74.7 GFLOPs)  latest YOLO with C3k2 blocks and C2PSA attention
 
 **3. Training:** 3 iterative versions on A100 GPU 
 
@@ -61,7 +61,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 | Challenge | Solution |
 |-----------|----------|
 | Potholes only 10% of data | Albumentations augmentation (+7,788 images) |
-| Same defect repeated 30x in video | ByteTrack tracking — 1 ID per defect |
+| Same defect repeated 30x in video | ByteTrack tracking 1 ID per defect |
 | Manual dedup was complex (50 lines) | ByteTrack replaced it (~10 lines) |
 
 ## Results
