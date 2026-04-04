@@ -16,10 +16,9 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 
 | Name | Role | Contribution |
 |------|------|-------------|
-|Ahad Alotaibi| Team Leader | Project coordination, model training, augmentation strategy |
-|  | Data Engineer | Data collection, preprocessing, class merging, EDA |
-|  | ML Engineer | Model evaluation, comparison, report writing |
-|  | Developer | Backend API, frontend integration, deployment |
+|Ahad Alotaibi|  |  |
+|  |  |  |
+|  ||  |
 
 ## Project Objectives
 
