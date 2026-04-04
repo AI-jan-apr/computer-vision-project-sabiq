@@ -1,9 +1,7 @@
 -- ============================================================
 -- SABIQ Database Schema
 -- Road Damage Detection System
--- Tuwaiq Academy — AI Track 2025
 -- ============================================================
-
 
 -- جدول الكشوفات
 CREATE TABLE detections (
@@ -19,7 +17,6 @@ CREATE TABLE detections (
     ) STORED
 );
 
-
 -- جدول التقارير
 CREATE TABLE reports (
     id           UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -30,10 +27,8 @@ CREATE TABLE reports (
     notes        TEXT
 );
 
-
 -- الأمان
 ALTER TABLE detections ENABLE ROW LEVEL SECURITY;
 ALTER TABLE reports    ENABLE ROW LEVEL SECURITY;
-
 CREATE POLICY "allow all" ON detections FOR ALL USING (true) WITH CHECK (true);
 CREATE POLICY "allow all" ON reports    FOR ALL USING (true) WITH CHECK (true);
