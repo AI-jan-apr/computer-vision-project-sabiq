@@ -12,7 +12,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 
 ---
 
-## 👥 Team Information
+## Team Information
 
 | Name | Role | Contribution |
 |------|------|-------------|
@@ -21,7 +21,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 |  | ML Engineer | Model evaluation, comparison, report writing |
 |  | Developer | Backend API, frontend integration, deployment |
 
-## 🎯 Project Objectives
+## Project Objectives
 
 **Problem:** Road surface defects such as potholes and cracks pose a serious risk to vehicle safety and traffic flow. When vehicles are damaged by poorly maintained roads, the responsible municipality is liable for compensation — creating both a safety concern and a financial burden. Traditional manual inspections are slow, costly, and cannot cover an entire city effectively.
 
@@ -32,7 +32,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 - **Quality of Life Program:** Better roads = better daily life for millions
 - **Year of AI 2026:** Practical AI application in municipal services
 
-## 📂 Dataset
+## Dataset
 
 **Source:** [RDD2022](https://www.kaggle.com/datasets/aliabdelmenam/rdd-2022) 
 
@@ -42,7 +42,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 - Augmented 7,788 pothole images (Albumentations) to fix class imbalance
 - Final training set: 34,657 images
 
-## 🧠 Methodology
+## Methodology
 
 **1. Preprocessing:** Class merging (5→3), data cleaning, offline augmentation for potholes
 
@@ -52,7 +52,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 
 **4. Video Deduplication:** ByteTrack (ECCV 2022) assigns unique ID per defect across frames. Same defect in 30 frames → stored once.
 
-## ⚙️ Implementation
+## Implementation
 
 **Stack:** Ultralytics YOLO · ByteTrack · FastAPI · HuggingFace Spaces · Loveable (React) · Supabase
 
@@ -64,7 +64,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 | Same defect repeated 30x in video | ByteTrack tracking — 1 ID per defect |
 | Manual dedup was complex (50 lines) | ByteTrack replaced it (~10 lines) |
 
-## 📊 Results
+## Results
 
 ### Overall Performance
 
@@ -96,7 +96,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 | Cracks (unique) | 734 repeated | Deduplicated |
 | Potholes (unique) | 204 repeated | Deduplicated |
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### Backend
 
