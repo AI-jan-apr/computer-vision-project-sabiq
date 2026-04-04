@@ -5,7 +5,7 @@
 
 # SABIQ — سابق
 
-**Proactive Road Damage Detection for Riyadh Municipality**
+**Proactive Road Damage Detection**
 
 AI-powered system that detects cracks and potholes from dashcam/drone video, deduplicates detections.
 </div>
