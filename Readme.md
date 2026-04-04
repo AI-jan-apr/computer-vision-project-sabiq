@@ -74,7 +74,7 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 | Precision | 0.658 | 0.717 | 0.687 | 
 | Recall | 0.605 | 0.558 | **0.585** |
 
-### Per-Class Performance (V3 — Final Model)
+### Per-Class Performance (V3  Final Model)
 
 | Class | Images | Precision | Recall | mAP50 | mAP50-95 |
 |-------|--------|-----------|--------|-------|----------|
@@ -83,16 +83,6 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 | Pothole | 544 | 0.635 | 0.491 | 0.512 | 0.233 |
 | **All** | **5,758** | **0.687** | **0.585** | **0.636** | **0.349** |
 
-
-### Video Deduplication Results
-
-| Metric | Without Tracking | With ByteTrack |
-|--------|-----------------|----------------|
-| Raw detections | 938 | — |
-| Unique defects returned | 938 (all duplicates) | **86** |
-| Reduction | — | **91%** |
-| Cracks (unique) | 734 repeated | Deduplicated |
-| Potholes (unique) | 204 repeated | Deduplicated |
 
 ## How to Run the Project
 
