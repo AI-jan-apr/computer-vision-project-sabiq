@@ -88,13 +88,12 @@ Cities struggle with slow, expensive, and incomplete inspections.
 
 ### Overall Performance
 
-| Metric | V1 (YOLOv8m) | V2 (YOLO26m) | V3 (YOLO26m) |
-|--------|-------------|-------------|--------------|
-| mAP50 | 0.636 | 0.621 | 0.636 |
-| mAP50-95 | 0.351 | 0.345 | 0.349 |
-| Precision | 0.658 | 0.717 | 0.687 |
-| Recall | 0.605 | 0.558 | 0.585 |
-
+| Metric | V1 (YOLOv8m) | V2 (YOLO11n) | V3 (YOLO26m) | V4 (YOLO26m) 
+|--------|-------------|-------------|--------------|--------------
+| mAP50 | 0.636 | 0.572 | 0.621 | **0.636**  
+| mAP50-95 | 0.351 | 0.312 | 0.345 | **0.349** 
+| Precision | 0.658 | 0.600 | **0.717** | 0.687 
+| Recall | **0.605** | 0.547 | 0.558 | 0.585 
 ---
 
 ### Per-Class Performance (V3 Final Model)
