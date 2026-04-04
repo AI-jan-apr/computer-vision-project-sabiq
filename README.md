@@ -107,7 +107,35 @@ Cities struggle with slow, expensive, and incomplete inspections.
 | All | 5,758 | 0.687 | 0.585 | 0.636 | 0.349 |
 
 ---
-
+## Project Structure
+ 
+```
+SABIQ/
+├── NoteBooks/                          # Training & analysis notebooks
+│   ├── 01_EDA_Cleaning.ipynb           # Exploratory data analysis & data cleaning
+│   ├── 02_TrainY8_v1.ipynb             # V1: YOLOv8m baseline (5 classes)
+│   ├── 03_TrainY26_v2.ipynb            # V2: YOLO26m + oversampling
+│   └── 04_TrainY26_v3.ipynb            # V3: YOLO26m + Albumentations (final)
+│
+├── SABIQ_runs/                         # Training outputs
+│   ├── yolo26v1/                       # V2 weights, metrics, confusion matrix
+│   └── yolo26v2/                       # V3 weights, metrics, confusion matrix
+│
+├── backend/                            # FastAPI backend (deployed on HuggingFace)
+│   ├── main.py                         # API: image/video detection + ByteTrack dedup
+│   ├── Dockerfile                      # Docker container config
+│   └── requirements.txt                # Python dependencies
+│
+├── database/
+│   └── supabase/migrations/
+│       └── 001_init.sql                # Database schema 
+│
+├── models/
+│   └── README.md                       # Model documentation
+│
+├── README.md                           # This file
+└── roadguard-pro-main.zip              # Frontend source code
+```
 ## How to Run the Project
 
 ### Backend
