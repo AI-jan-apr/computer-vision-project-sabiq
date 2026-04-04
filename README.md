@@ -26,6 +26,9 @@ Cities struggle with slow, expensive, and incomplete inspections.
 ![YOLO](https://img.shields.io/badge/YOLOv26-111111?logo=opencv&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?logo=huggingface&logoColor=black)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
 
 
 </div>
@@ -68,12 +71,7 @@ Cities struggle with slow, expensive, and incomplete inspections.
 
 **4. Video Deduplication:** ByteTrack (ECCV 2022) assigns unique ID per defect across frames. Same defect in 30 frames → stored once.  
 
----
-
-## Implementation
-
-**Stack:** Ultralytics YOLO · ByteTrack · FastAPI · HuggingFace Spaces · Loveable (React) · Supabase  
-
+ 
 ---
 
 ## Challenges
