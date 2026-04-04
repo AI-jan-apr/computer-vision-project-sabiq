@@ -154,7 +154,7 @@ uvicorn main:app --reload --port 8000
 
 <div align="center">
 
-##  Team SABIQ 
+##      SABIQ Team  
 Ahad Alotaibi · Rahaf ALshahrani · Amjad Althobaiti  
 
 ---
