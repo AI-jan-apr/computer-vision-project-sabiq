@@ -74,7 +74,6 @@ AI-powered system that detects cracks and potholes from dashcam/drone video, ded
 | mAP50-95 | 0.351 | 0.345 | **0.349** |
 | Precision | 0.658 | 0.717 | 0.687 | 
 | Recall | 0.605 | 0.558 | **0.585** |
-| Inference speed | 1.3 ms | 1.6 ms | 1.6 ms |
 
 ### Per-Class Performance (V3 — Final Model)
 
