@@ -114,7 +114,8 @@ SABIQ/
 │   ├── 01_EDA_Cleaning.ipynb           # Exploratory data analysis & data cleaning
 │   ├── 02_TrainY8_v1.ipynb             # V1: YOLOv8m baseline (5 classes)
 │   ├── 03_TrainY26_v2.ipynb            # V2: YOLO26m + oversampling
-│   └── 04_TrainY26_v3.ipynb            # V3: YOLO26m + Albumentations (final)
+│   ├── 04_TrainY26_v3.ipynb            # V3: YOLO26m + Albumentations (final)
+│   └── 05_TrainY11_v1.ipynb            # V4: YOLO11n lightweight baseline
 │
 ├── SABIQ_runs/                         # Training outputs
 │   ├── yolo26v1/                       # V2 weights, metrics, confusion matrix
