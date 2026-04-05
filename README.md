@@ -168,7 +168,7 @@ uvicorn main:app --reload --port 8000
 |-------------|------|
 | **Ahad Alotaibi** | Trained and optimized the **YOLO26** model, and conducted real-world data collection experiments using drones, including system integration with aerial capture. |
 | **Amjad Althobaiti** | Trained the **YOLO11** model and handled project deployment using **Docker**, ensuring scalable and efficient setup. |
-| **Rahaf Alshahrani** | Trained the **YOLOv8** model, developed the user interface (UI) to enhance user experience, and deployed the project on **Hugging Face**. |
+| **Rahaf Alshahrani** | Trained the **YOLOv8** model, developed the user interface (UI) , and led project deployment on **Hugging Face** managed database integration using Supabase. |
 
 ---
 ## Team Spirit
